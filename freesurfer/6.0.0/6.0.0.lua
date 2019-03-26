@@ -1,0 +1,26 @@
+conflict(myModuleName())
+conflict("minc-toolkit-v2")
+
+local quarantinepath    = os.getenv("QUARANTINE_PATH")
+local basepath = pathJoin(quarantinepath,myModuleName(),myModuleVersion(),"install/freesurfer")
+
+prepend_path( "PATH",           pathJoin(basepath,"bin"))
+prepend_path( "PATH",           pathJoin(basepath,"mni/bin"))
+prepend_path( "PATH",           pathJoin(basepath,"itktools"))
+prepend_path( "PATH",           pathJoin(basepath,"fsfast/bin"))
+prepend_path( "PERL5LIB", pathJoin(basepath,"mni/share/perl5"))
+
+
+setenv("FREESURFER_HOME" basepath)
+setenv("SUBJECTS_DIR", pathJoin(basepath,"subjects"))
+setenv("MNI_DIR", pathJoin(basepath,"mni"))
+setenv("FSFAST_HOME", pathJoin(basepath,"fsfast"))
+setenv("FSF_OUTPUT_FORMAT", "nii.gz")
+setenv("LOCAL_DIR", pathJoin(basepath,"local"))
+setenv("FMRI_ANALYSIS_DIR", pathJoin(basepath,"fsfast"))
+setenv("MNI_PERL5LIB",  pathJoin(basepath,"mni/share/perl5"))
+setenv("MINC_BIN_DIR", pathJoin(basepath,"mni/bin"))
+setenv("FIX_VERTEX_AREA", "")
+setenv("FS_OVERRIDE", "0")
+setenv("MINC_LIB_DIR", pathJoin(basepath,"mni/lib"))
+setenv("MNI_DATAPATH", pathJoin(basepath,"mni/data"))

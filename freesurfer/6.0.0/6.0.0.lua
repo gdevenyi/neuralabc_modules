@@ -11,7 +11,7 @@ prepend_path( "PATH",           pathJoin(basepath,"fsfast/bin"))
 prepend_path( "PERL5LIB", pathJoin(basepath,"mni/share/perl5"))
 
 
-setenv("FREESURFER_HOME" basepath)
+setenv("FREESURFER_HOME", basepath)
 setenv("SUBJECTS_DIR", pathJoin(basepath,"subjects"))
 setenv("MNI_DIR", pathJoin(basepath,"mni"))
 setenv("FSFAST_HOME", pathJoin(basepath,"fsfast"))

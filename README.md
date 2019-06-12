@@ -18,3 +18,11 @@ General process:
 5) Properly document your installation steps in `src/README.md`
 5) copy .lua file from existing module and adapt to update the required modules and alter required paths as necessary
 6) run `/opt/quarantine/link-new-modules.sh`
+
+# Uploading changes
+
+```
+> git add ...
+> git commit ...
+> git push origin master
+```

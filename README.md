@@ -24,5 +24,6 @@ General process:
 ```
 > git add ...
 > git commit ...
-> git push origin master
+> git push https://github.com/gdevenyi/neuralabc_modules
+#> git push origin master
 ```

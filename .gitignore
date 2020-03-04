@@ -2,6 +2,7 @@ resources
 */*/install
 */*/src/*tar.gz
 */*/src/*zip
+*/*/src/*tar
 */*/src/*tgz
 */*/src/*/
 freesurfer/license.txt

@@ -5,12 +5,14 @@ wget http://www.neuro.uni-jena.de/cat12/cat12_latest.zip
 wget http://www.diedrichsenlab.org/download/suit_v3.3.zip
 wget http://www.restfmri.net/forum/sites/default/files/190205_RESTplus_V1.22.tar.gz
 wget http://www.restfmri.net/forum/sites/default/files/RESTplus%20V1.21%20Manual.pdf
+wget http://www.neuro.uni-jena.de/tfce/tfce_latest.zip 
 
 mkdir ../install
 unzip spm12.zip -d ../install/
 unzip  spm12_updates_r7487.zip  -d../install/spm12/
 unzip cat12_latest.zip -d ../install/spm12/toolbox/
 unzip suit_v3.3.zip -d ../install/spm12/toolbox/
+unzip tfce_latest.zip -d ../install/spm12/toolbox/
 rm -rf ../install/spm12/toolbox/__MACOSX
 
 tar -xvf 190205_RESTplus_V1.22.tar.gz -C ../install/spm12/toolbox/

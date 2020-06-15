@@ -5,5 +5,6 @@ local basepath = pathJoin(quarantinepath,myModuleName(),myModuleVersion(),"insta
 
 prepend_path( "PATH",           pathJoin(basepath,"spm12"))
 prepend_path( "MATLABPATH",           pathJoin(basepath,"spm12"))
+prepend_path( "MATLABPATH",           pathJoin(basepath,"spm12/matlabbatch"))
 prepend_path( "MATLABPATH",           pathJoin(basepath,"spm12/toolbox/cat12"))
 prepend_path( "MATLABPATH",           pathJoin(basepath,"spm12/toolbox/suit"))

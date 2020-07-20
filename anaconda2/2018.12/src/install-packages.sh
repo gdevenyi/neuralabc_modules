@@ -4,7 +4,7 @@ for package in mkl nipype nibabel simpleitk dipy jupyterlab nilearn bokeh \
 		pyqt scikit-learn pillow pytest-cov pytest-mock pytest-timeout flake8 \
 		pyface traitsui pyvista mayavi PySurfer neo pytest-faulthandler \
 		pytest-sugar pydocstyle codespell python-picard cupy r-base r-essentials \
-		datalad; do
+		datalad xeus-python ptvsd nodejs; do
 	conda install --no-update-deps ${package} --yes
 done
 

@@ -7,5 +7,5 @@ for package in mkl nipype nibabel simpleitk dipy jupyterlab nilearn bokeh \
 		datalad xeus-python ptvsd nodejs pweave mne-hcp; do
 	conda install --no-update-deps ${package} --yes
 done
-conda install -c mrtrix3 mrtrix3
+conda install -c mrtrix3 mrtrix3 --yes
 pip install qbatch

@@ -8,4 +8,7 @@ for package in mkl nipype nibabel simpleitk dipy jupyterlab nilearn bokeh \
 	conda install --no-update-deps ${package} --yes
 done
 conda install -c mrtrix3 mrtrix3 --yes
+conda install -c conda-forge dcm2niix --yes
+conda install -c conda-forge dcm2bids --yes
+
 pip install qbatch

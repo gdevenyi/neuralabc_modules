@@ -6,3 +6,4 @@ resources
 */*/src/*tgz
 */*/src/*/
 freesurfer/license.txt
+*.deb
